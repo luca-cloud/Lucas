@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <style>
+        div {
+            border: 10px solid gray;
+            font-size: 0px;
+        }
+
+        button {
+            width: 25%;
+            height: 30px;
+        }
+
+        .clear {
+            width: 50%;
+            background-color: rgb(255, 196, 0);
+        }
+
+        .submit {
+            width: 50%;
+            background-color: lightgreen;
+        }
+
+        p {
+            text-align: right;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>Calculadora</h2>
+    <h1>Calculadora</h1>
+    <br>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-var resultado1;
-var resultado2;
-var resultadoFinal;
+    <script>
 
-function soma(){
-    resultadoFinal = resultado1 + resultado2
-}
 
-function subtrai(){
-    resultadoFinal = resultado1 - resultado2
-}
+        var resultado1;
+        var resultado2;
+        var resultadoFinal;
 
-function divide(){
-    resultadoFinal = resultado1 / resultado2
-}
+        function soma() {
+            resultadoFinal = resultado1 + resultado2
+        }
 
-function multiplicação(){
-    resultadoFinal = resultado1 * resultado2
-}
+        function subtrai() {
+            resultadoFinal = resultado1 - resultado2
+        }
 
-</script>
+        function divide() {
+            resultadoFinal = resultado1 / resultado2
+        }
 
-<button id="1" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 1">1</button>
-<button id="2" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 2">2</button>
-<button id="3" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 3">3</button>
-<button id="4" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 4">4</button>
-<button id="5" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 5">5</button>
-<button id="6" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 6">6</button>
-<button id="7" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 7">7</button>
-<button id="8" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 8">8</button>
-<button id="9" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 9">9</button>
-<button id="0" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 0">0</button>
+        function multiplicação() {
+            resultadoFinal = resultado1 * resultado2
+        }
+
+    </script>
+    <div>
+
+
+
+
+
+
+
+        <button id="7"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 7">7</button>
+
+
+        <button id="8"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 8">8</button>
+
+        <button id="9"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 9">9</button>
+
+            <button>x</button>
+
+        <button id="4"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 4">4</button>
+
+        <button id="5"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 5">5</button>
+
+        <button id="6"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 6">6</button>
+
+            <button>/</button>
+
+<button id="1"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 1">1</button>
+
+<button id="2"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 2">2</button>
+        <button id="3"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 3">3</button>
+
+            <button>+</button>
+            <button>.</button>
+
+        <button id="0"
+            onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + 0">0</button>
+
+            <button>%</button>
+            <button>_</button>
+
+        <button class="clear">AC</button>
+        <button class="submit">=</button>
+
+    </div>
 
 
 </body>
+
 </html>
